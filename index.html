@@ -146,6 +146,17 @@ body{background:var(--bg)}
 /* Unified personal identity: HBK / HONG BYUNGGI */
 .brandmark{width:44px;height:44px;font-size:15px;letter-spacing:-1.1px;font-weight:900;flex-shrink:0}
 @media(max-width:760px){.brandmark{width:39px;height:39px;font-size:13px;letter-spacing:-1px}}
+
+/* Career timeline / concise responsibility notes */
+.timeline-item{align-items:start;padding:19px 10px;grid-template-columns:174px minmax(0,1fr) 117px;column-gap:27px;transition:background .2s}
+.timeline-item:hover{background:#eff7f5}
+.tl-date{padding-top:4px;white-space:nowrap}
+.tl-org{display:block;color:#729085;font-weight:800;letter-spacing:.1px}
+.tl-content h3{font-size:14px;line-height:1.55;font-weight:800;color:#1c3545;margin:3px 0 5px}
+.tl-summary{font-size:11px;line-height:1.8;color:#647b88;margin:0;letter-spacing:-.12px;word-break:keep-all}
+.timeline-item .type{margin-top:4px;max-width:117px;line-height:1.45}
+@media(max-width:760px){.timeline-item{grid-template-columns:1fr auto;column-gap:12px;row-gap:3px;padding:16px 3px}.tl-date{grid-column:1/-1;padding:0}.tl-content h3{font-size:13px;margin-top:2px}.tl-summary{font-size:11px;line-height:1.7}.timeline-item .type{margin-top:2px}}
+@media print{.timeline-item{grid-template-columns:130px minmax(0,1fr) 85px;gap:12px;padding:7px 0;break-inside:avoid}.tl-content h3{font-size:10px;margin:1px 0 2px}.tl-summary{font-size:8px;line-height:1.35}.tl-date{padding-top:0}.timeline-item .type{font-size:8px;margin:0}}
 </style>
 </head>
 <body>
@@ -343,18 +354,18 @@ body{background:var(--bg)}
 </section>
 <section class="section shell" id="experience"><div class="section-heading history-head reveal"><div><p class="sect-kicker">04 / PROJECT RECORD</p><h2 class="sect-title">경력의 흐름을<br>한눈에 확인하세요.</h2></div><p class="sect-desc">KOSA 경력증명서에 등록된 12개 사업을 기준으로 정리했습니다. 같은 기간에 수행한 사업은 일부 중첩될 수 있습니다.</p></div>
 <ol class="timeline reveal">
-<li class="timeline-item"><div class="tl-date">2023.01 — 2023.12</div><div class="tl-content"><span class="tl-org">국민체육진흥공단</span><h3>KSPO 정보시스템 통합유지보수</h3></div><span class="type">운영·유지보수</span></li>
-<li class="timeline-item"><div class="tl-date">2022.02 — 2022.12</div><div class="tl-content"><span class="tl-org">의료기관평가인증원</span><h3>환자안전 보고학습시스템</h3></div><span class="type">운영·유지보수</span></li>
-<li class="timeline-item"><div class="tl-date">2021.01 — 2021.12</div><div class="tl-content"><span class="tl-org">해외문화홍보원</span><h3>코리아넷 집배신시스템 · 2차년도</h3></div><span class="type">운영·고도화</span></li>
-<li class="timeline-item"><div class="tl-date">2020.04 — 2021.01</div><div class="tl-content"><span class="tl-org">해외문화홍보원</span><h3>코리아넷 집배신시스템 · 1차년도</h3></div><span class="type">운영·고도화</span></li>
-<li class="timeline-item"><div class="tl-date">2019.07 — 2020.01</div><div class="tl-content"><span class="tl-org">세종학당</span><h3>온라인 학습 플랫폼 · 초기 설계·공통 개발·Webex 연동</h3></div><span class="type">구축</span></li>
-<li class="timeline-item"><div class="tl-date">2019.04 — 2019.07</div><div class="tl-content"><span class="tl-org">대중소기업·농어업협력재단</span><h3>적합업종 정보화시스템 · 단독 개발·DB 설계·감리 대응</h3></div><span class="type">구축</span></li>
-<li class="timeline-item"><div class="tl-date">2018.12 — 2019.01</div><div class="tl-content"><span class="tl-org">소상공인시장진흥공단</span><h3>교육정보시스템 고도화 · 제휴강의 채널 개발</h3></div><span class="type">고도화</span></li>
-<li class="timeline-item"><div class="tl-date">2018.10 — 2020.01</div><div class="tl-content"><span class="tl-org">기상청</span><h3>기상교육정보시스템 유지보수 · 운영 배포 및 기능 개선</h3></div><span class="type">운영·유지보수</span></li>
-<li class="timeline-item"><div class="tl-date">2018.03 — 2018.10</div><div class="tl-content"><span class="tl-org">기상청</span><h3>기상교육정보시스템 개선 · 초기 분석·구축 설계·개발</h3></div><span class="type">구축·개선</span></li>
-<li class="timeline-item"><div class="tl-date">2018.01 — 2019.01</div><div class="tl-content"><span class="tl-org">전략물자관리원 (KOSTI)</span><h3>무역안보교육관 LMS · 결제 모듈 유지보수 경험</h3></div><span class="type">운영·유지보수</span></li>
-<li class="timeline-item"><div class="tl-date">2017.09 — 2018.01</div><div class="tl-content"><span class="tl-org">사이버경찰청</span><h3>홈페이지 개편 및 운영</h3></div><span class="type">구축·운영</span></li>
-<li class="timeline-item"><div class="tl-date">2017.07 — 2017.08</div><div class="tl-content"><span class="tl-org">서민금융진흥원</span><h3>통합 교육포털시스템</h3></div><span class="type">구축</span></li>
+<li class="timeline-item"><div class="tl-date">2023.01 — 2023.12</div><div class="tl-content"><span class="tl-org">국민체육진흥공단</span><h3>KSPO 정보시스템 통합유지보수</h3><p class="tl-summary">K스포에듀 LMS 기능 개선, 망 분리·ISMS-P 대응, 동영상 서비스 운영</p></div><span class="type">운영·유지보수</span></li>
+<li class="timeline-item"><div class="tl-date">2022.02 — 2022.12</div><div class="tl-content"><span class="tl-org">의료기관평가인증원</span><h3>환자안전 보고학습시스템</h3><p class="tl-summary">관리자·사용자 기능 유지보수 및 심평원 매일 오전 정기 데이터 연계 운영</p></div><span class="type">운영·유지보수</span></li>
+<li class="timeline-item"><div class="tl-date">2021.01 — 2021.12</div><div class="tl-content"><span class="tl-org">해외문화홍보원</span><h3>코리아넷 집배신시스템 · 2차년도</h3><p class="tl-summary">1·2차 통합 수행: 기관 간 보도자료 연계·배치 개발, 개발 서버 구축 및 배포 개선</p></div><span class="type">운영·고도화</span></li>
+<li class="timeline-item"><div class="tl-date">2020.04 — 2021.01</div><div class="tl-content"><span class="tl-org">해외문화홍보원</span><h3>코리아넷 집배신시스템 · 1차년도</h3><p class="tl-summary">1·2차 통합 수행: 기관 간 보도자료 연계·배치 개발, 개발 서버 구축 및 배포 개선</p></div><span class="type">운영·고도화</span></li>
+<li class="timeline-item"><div class="tl-date">2019.07 — 2020.01</div><div class="tl-content"><span class="tl-org">세종학당</span><h3>온라인 학습 플랫폼 구축</h3><p class="tl-summary">초기 설계·프로젝트 기본 구조·공통 기능 개발, Webex API 화상회의 연동</p></div><span class="type">구축</span></li>
+<li class="timeline-item"><div class="tl-date">2019.04 — 2019.07</div><div class="tl-content"><span class="tl-org">대중소기업·농어업협력재단</span><h3>적합업종 정보화시스템 구축</h3><p class="tl-summary">서류 업무 전산화, 업무 분석·DB 설계 및 시스템 단독 개발, 감리 대응</p></div><span class="type">구축</span></li>
+<li class="timeline-item"><div class="tl-date">2018.12 — 2019.01</div><div class="tl-content"><span class="tl-org">소상공인시장진흥공단</span><h3>교육정보시스템 고도화</h3><p class="tl-summary">제휴기관별 전용 교육 채널과 고유 URL 경로 제공 기능 개발</p></div><span class="type">고도화</span></li>
+<li class="timeline-item"><div class="tl-date">2018.10 — 2020.01</div><div class="tl-content"><span class="tl-org">기상청</span><h3>기상교육정보시스템 유지보수</h3><p class="tl-summary">기능 개선·운영 이슈 대응 및 운영 환경 배포, 시스템 안정화</p></div><span class="type">운영·유지보수</span></li>
+<li class="timeline-item"><div class="tl-date">2018.03 — 2018.10</div><div class="tl-content"><span class="tl-org">기상청</span><h3>기상교육정보시스템 구축·개선</h3><p class="tl-summary">초기 요구사항 분석부터 구축 설계·개발·운영 배포까지 전 과정 수행</p></div><span class="type">구축·개선</span></li>
+<li class="timeline-item"><div class="tl-date">2018.01 — 2019.01</div><div class="tl-content"><span class="tl-org">전략물자관리원 (KOSTI)</span><h3>무역안보교육관 LMS 유지보수</h3><p class="tl-summary">온라인 교육 LMS 운영·유지보수 및 결제 모듈 관련 업무 경험</p></div><span class="type">운영·유지보수</span></li>
+<li class="timeline-item"><div class="tl-date">2017.09 — 2018.01</div><div class="tl-content"><span class="tl-org">사이버경찰청</span><h3>홈페이지 개편 및 운영</h3><p class="tl-summary">홈페이지 개편 관련 기능 개발 및 시스템 운영·유지보수</p></div><span class="type">구축·운영</span></li>
+<li class="timeline-item"><div class="tl-date">2017.07 — 2017.08</div><div class="tl-content"><span class="tl-org">서민금융진흥원</span><h3>통합 교육포털시스템 구축</h3><p class="tl-summary">신규 통합 교육포털 구축 참여 및 온라인 교육 서비스 개발</p></div><span class="type">구축</span></li>
 </ol><p class="history-footer">KOSA 등록 경력증명서 발급 기준: 2024.10.30 · 현재 K스포에듀 유지보수 업무의 2024~2026년 신고 이력은 별도 갱신 예정</p></section>
 <section class="section tech-bg" id="skills"><div class="shell skill-layout">
 <div class="skill-intro reveal"><p class="sect-kicker">05 / TECH STACK</p><h2 class="sect-title">현장에서<br>사용해 온 기술.</h2><p>실무에서 사용해 온 기술과 개인 프로젝트로 접한 기술을 구분했습니다. 새로운 기술은 직접 구현하고 설명할 수 있는 범위에서 소개합니다.</p></div>
