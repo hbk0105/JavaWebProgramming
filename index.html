@@ -103,6 +103,45 @@ body{background:var(--bg)}
 .development-case .case-link-row a:hover{color:#134439;border-color:#134439}
 @media(max-width:760px){.development-case-grid{grid-template-columns:1fr}.development-case{min-height:0;padding:26px}.development-case-heading{margin-top:35px}.development-case h3{font-size:22px}}
 @media print{.development-case-heading{margin:14px 0 7px}.development-case-grid{gap:10px}.development-case{min-height:0;padding:12px;box-shadow:none!important;break-inside:avoid}.development-case h3{font-size:14px;margin:7px 0}.development-case p:not(.case-client){font-size:9px}.development-case .case-meta,.development-case .case-client{font-size:9px}}
+
+/* In-depth project stories: scannable responsibilities, not abbreviated teaser cards */
+.project-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:19px;margin-top:20px}
+.project-card.project-card-expanded{min-height:0;padding:29px 30px 28px;border:1px solid #dfe9e8;border-top:3px solid #48b8a9;border-radius:17px;box-shadow:0 12px 28px #14394b0b}
+.project-card-expanded .card-head{margin-bottom:23px;gap:12px;align-items:flex-start}
+.project-card-expanded .project-role-label{font-size:10px;letter-spacing:-.15px;text-transform:none;font-weight:700;color:#5a827f;background:#e8f5f2;border-radius:5px;padding:6px 9px;text-align:right;line-height:1.5}
+.project-card-expanded h3{font-size:23px;line-height:1.42;margin-bottom:10px}
+.project-card-expanded .org{font-size:11px;margin-bottom:16px}
+.project-card-expanded .details{font-size:12px;line-height:1.95;color:#566f7c;margin-bottom:18px}
+.project-card-expanded .details strong{color:#11695f;font-weight:850}
+.project-roles-title{font-size:10px;letter-spacing:1.4px;color:#0b8177;font-weight:900;text-transform:uppercase;margin-bottom:9px}
+.project-task-list{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:10px}
+.project-task-list li{position:relative;padding-left:15px;color:#3f5866;font-size:12px;line-height:1.85;word-break:keep-all}
+.project-task-list li:before{content:'';position:absolute;width:5px;height:5px;left:0;top:.75em;background:#38b5a3;border-radius:50%}
+.project-task-list strong{color:#12493f;font-weight:850}
+.project-problem{border-left:3px solid #2aa99e;border-radius:0 8px 8px 0;background:#eef8f5;padding:13px 14px;margin:0 0 18px}
+.project-problem>span{display:block;font-size:9px;font-weight:900;letter-spacing:1.2px;color:#087d70;margin:0 0 7px}
+.project-problem p{font-size:11px;line-height:1.9;color:#45686b;margin:0;word-break:keep-all}
+.project-problem b{color:#164b4a}
+.project-stack{display:grid;gap:11px;border-top:1px solid #e0e9e8;padding-top:17px;margin-top:auto}
+.project-stack div>span{font-size:9px;color:#198c7e;font-weight:900;letter-spacing:1px}
+.project-stack div>p{margin:4px 0 0;color:#6a7e87;font-size:10px;line-height:1.8;word-break:keep-all}
+.project-card.project-card-wide{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,.74fr) minmax(0,1.26fr);gap:28px;padding:32px 34px}
+.project-card-wide .project-card-text{padding-right:28px;border-right:1px solid #e0e9e8}
+.project-card-wide .project-card-work{display:flex;flex-direction:column}
+.project-card-wide .card-head{flex-wrap:wrap}
+.project-card-wide h3{font-size:25px}
+.featured .featured-intro{font-size:12px;line-height:1.9;color:#bdd1d6;margin:5px 0 18px;word-break:keep-all}
+.featured .detailed-bullets{display:grid;gap:9px}
+.featured .detailed-bullets li{line-height:1.8;word-break:keep-all}
+.featured .tagrow{margin-top:24px;gap:7px}
+.featured .tag{line-height:1.65}
+.development-case{min-height:0}
+.development-case .development-case-tasks{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:9px}
+.development-case .development-case-tasks li{font-size:11px;color:#566f7a;line-height:1.85;position:relative;padding-left:13px;word-break:keep-all}
+.development-case .development-case-tasks li:before{content:'';position:absolute;top:.75em;left:0;width:4px;height:4px;border-radius:50%;background:#2aa991}
+@media(max-width:920px){.project-grid{grid-template-columns:1fr}.project-card.project-card-wide{grid-template-columns:1fr;gap:22px}.project-card-wide .project-card-text{padding:0 0 10px;border-right:0;border-bottom:1px solid #e0e9e8}}
+@media(max-width:760px){.project-grid{gap:14px}.project-card.project-card-expanded,.project-card.project-card-wide{padding:25px}.project-card-expanded h3{font-size:22px}.project-card-wide .project-card-text{padding-bottom:5px}.project-task-list li{font-size:12px}}
+@media print{.project-grid{grid-template-columns:1fr 1fr;gap:9px}.project-card.project-card-expanded,.project-card.project-card-wide{padding:12px;break-inside:avoid;box-shadow:none!important}.project-card.project-card-wide{grid-column:1/-1;grid-template-columns:1fr 1fr}.project-card-wide .project-card-text{border-bottom:0;border-right:1px solid #ccd9d8;padding:0 12px 0 0}.project-card-expanded h3{font-size:14px;margin:0 0 4px}.project-card-expanded .card-head{margin-bottom:7px}.project-card-expanded .details,.project-task-list li{font-size:9px;line-height:1.5}.project-roles-title{font-size:9px}.project-task-list{gap:5px;margin:0 0 8px}.project-stack{padding-top:5px;gap:4px}.project-stack div>p{font-size:8px}.project-problem{padding:7px;margin-bottom:6px}.project-problem p{font-size:9px}.featured .featured-intro{color:#345!important}.development-case .development-case-tasks{gap:5px;margin-bottom:10px}.development-case .development-case-tasks li{font-size:9px}}
 </style>
 </head>
 <body>
@@ -137,7 +176,7 @@ body{background:var(--bg)}
 <section class="section shell" id="about"><div class="intro reveal">
 <div class="intro-left"><div class="mini-index">01.</div><p>ABOUT ME<br>BACKEND DEVELOPMENT<br>&amp; OPERATIONS</p></div>
 <div class="intro-right"><h2>좋은 코드는 개발이 끝난 뒤에도<br><em>안정적으로 동작해야 한다고 생각합니다.</em></h2>
-<p>Java, Spring, 전자정부프레임워크 기반으로 공공기관 교육·정보시스템의 구축과 운영 업무를 수행해 왔습니다. 기존 업무 흐름을 이해하고 기능을 개선하는 일부터 기관 간 데이터 연계, 운영 중 발생한 문제를 분석하고 대응하는 일까지 경험했습니다.</p>
+<p>Java, Spring, 전자정부프레임워크 기반으로 공공기관 교육·정보시스템의 구축과 운영 업무를 수행해 왔습니다. 기존 업무 흐름을 이해하고 기능을 개선하는 일부터 기관 간 데이터 연계, 개발 환경 구성·배포 개선, 공공사업 감리 대응까지 경험했습니다.</p>
 <p>현재 국민체육진흥공단 K스포에듀 LMS 유지보수를 담당하며 망 분리, ISMS-P 인증 대응, 웹 접근성 및 보안 취약점 개선 업무를 수행하고 있습니다.</p><p>업무 외에는 AI 도구를 학습 보조 수단으로 활용하면서 Spring Boot 기반 개인 프로젝트를 진행하고, 새로운 기술을 직접 실습하며 개발 역량을 넓혀가고 있습니다.</p>
 </div></div>
 <div class="capabilities reveal">
@@ -146,18 +185,71 @@ body{background:var(--bg)}
 <div class="cap"><span class="cap-num">03 / OPERATE</span><h3>안정적인 서비스 운영</h3><p>LMS 및 공공 시스템의 유지보수, 운영 이슈 분석, 보안 요구사항과 서비스 안정성 대응</p></div>
 </div></section>
 <section class="section projects-bg" id="projects"><div class="shell">
-<div class="section-heading reveal"><div><p class="sect-kicker">02 / SELECTED WORK</p><h2 class="sect-title">대표 프로젝트<span aria-hidden="true">.</span></h2></div><p class="sect-desc">구축 경험에 실제 운영·유지보수 역량을 더한 주요 프로젝트입니다. 담당 업무를 중심으로 간결하게 정리했습니다.</p></div>
+<div class="section-heading reveal"><div><p class="sect-kicker">02 / SELECTED WORK</p><h2 class="sect-title">대표 프로젝트<span aria-hidden="true">.</span></h2></div><p class="sect-desc">구축부터 운영까지, 각 프로젝트에서 직접 담당한 기능과 기술적 문제 해결 경험을 구체적으로 기록했습니다.</p></div>
 <article class="featured reveal">
 <div class="featured-copy"><div class="project-id">FEATURED PROJECT — 01</div><h3>국민체육진흥공단<br>K스포에듀 LMS</h3><div class="project-date">2023.01 — 현재 · 운영·유지보수</div>
-<ul class="bulletset"><li>교육 서비스 기능 개선 및 운영 이슈 대응</li><li>망 분리, ISMS-P, 웹 접근성 및 보안 취약점 개선</li><li>KINX CDN · Wowza 기반 동영상 서비스 환경 운영</li></ul>
-<div class="tagrow"><span class="tag">Java</span><span class="tag">Spring</span><span class="tag">eGovFramework</span><span class="tag">Oracle</span><span class="tag">Wowza</span></div>
+<p class="featured-intro">공공 교육 플랫폼의 기능 개선부터 보안·운영 환경 대응, 동영상 콘텐츠 전송 서비스까지 담당하고 있습니다.</p>
+<ul class="bulletset detailed-bullets">
+<li>관리자·사용자 페이지 기능 개선 및 운영 중 발생한 오류 분석·대응</li>
+<li>내·외부망 분리 작업, ISMS-P 인증 대응 및 웹 접근성·보안 취약점 개선</li>
+<li>KINX CDN·Wowza Streaming Server 기반 교육 동영상 서비스 운영</li>
+<li>Gabia Cloud·Resin 기반 운영 환경 유지보수 및 OZReport 관련 업무 대응</li>
+</ul>
+<div class="tagrow"><span class="tag">Java · Spring · eGovFramework</span><span class="tag">Oracle</span><span class="tag">JavaScript · jQuery</span><span class="tag">Resin</span><span class="tag">KINX CDN · Wowza</span><span class="tag">Gabia Cloud · OZReport</span></div>
 </div>
 <div class="featured-art" aria-hidden="true"><div class="architecture"><div class="a-top"><span>SERVICE LAYERS</span><span>01 / 03</span></div><div class="a-line"></div><div class="a-slab">LMS APPLICATION <span>JAVA / SPRING</span></div><div class="a-slab">CONTENT DELIVERY <span>CDN / STREAMING</span></div><div class="a-slab">OPERATIONS <span>SECURITY / STABILITY</span></div><div class="a-foot">SYSTEM ARCHITECTURE / CONCEPTUAL</div></div></div>
 </article>
 <div class="project-grid">
-<article class="project-card reveal"><div class="card-head"><span>PROJECT 02</span><span class="arr" aria-hidden="true">↗</span></div><h3>환자안전<br>보고학습시스템</h3><p class="org">의료기관평가인증원 · 2022.02 — 2022.12</p><p class="details">관리자·사용자 페이지 기능 유지보수 및 운영 이슈 대응. 건강보험심사평가원(심평원)과 매일 오전 정기적으로 데이터를 연계하는 시스템의 운영·유지보수 경험.</p><div class="pills"><span class="pill">Java</span><span class="pill">eGovFramework</span><span class="pill">Tibero</span><span class="pill">JEUS</span><span class="pill">데이터 연계</span></div></article>
-<article class="project-card reveal"><div class="card-head"><span>PROJECT 03</span><span class="arr" aria-hidden="true">↗</span></div><h3>코리아넷<br>집배신시스템</h3><p class="org">해외문화홍보원 · 2020.04 — 2021.12</p><p class="details">타 기관 영문 보도자료 연계 기능 담당. 보도자료 관리 기능과 데이터 연계 배치 개발·운영, 기능 고도화.</p><div class="pills"><span class="pill">Java</span><span class="pill">CUBRID</span><span class="pill">JSP</span><span class="pill">Batch</span></div></article>
-<article class="project-card reveal"><div class="card-head"><span>PROJECT 04</span><span class="arr" aria-hidden="true">↗</span></div><h3>세종학당<br>온라인 학습 플랫폼</h3><p class="org">누리세종학당 · 2019.07 — 2020.01</p><p class="details">신규 플랫폼의 초기 설계, 프로젝트 기본 구조 및 공통 기능 개발을 담당했습니다. Cisco Webex API 연동을 통한 실시간 화상회의 기능도 구현했습니다.</p><div class="pills"><span class="pill">초기 설계</span><span class="pill">공통 기능</span><span class="pill">Webex API</span></div></article>
+<article class="project-card project-card-expanded reveal">
+<div class="card-head"><span>PROJECT 02</span><span class="project-role-label">운영 · 기관 간 연계</span></div>
+<h3>환자안전<br>보고학습시스템</h3>
+<p class="org">의료기관평가인증원 · 2022.02 — 2022.12</p>
+<p class="details">공공 보건의료 시스템의 기능 유지보수와 <strong>건강보험심사평가원 정기 데이터 연계</strong> 운영 경험.</p>
+<div class="project-roles-title">담당 업무</div>
+<ul class="project-task-list">
+<li>관리자·사용자 페이지 기능 개선 및 기존 기능 유지보수</li>
+<li>심평원과 <strong>매일 오전 수행되는 정기 데이터 연계 시스템 운영·점검</strong></li>
+<li>서비스 오류 분석, 운영 이슈 대응 및 시스템 안정화</li>
+</ul>
+<div class="project-stack"><div><span>DEVELOPMENT</span><p>Java · eGovFramework · JavaScript · jQuery · JQGrid</p></div><div><span>DATA / INFRA</span><p>Tibero · MySQL · WebtoB · JEUS · Wowza · OZReport</p></div></div>
+</article>
+<article class="project-card project-card-expanded project-card-impact reveal">
+<div class="card-head"><span>PROJECT 03</span><span class="project-role-label">개발 · 배치 · 배포 환경 개선</span></div>
+<h3>코리아넷<br>집배신시스템</h3>
+<p class="org">해외문화홍보원 · 2020.04 — 2021.12</p>
+<p class="details">타 기관 데이터 연계와 운영 배포 환경 개선까지 수행한 프로젝트.</p>
+<div class="project-roles-title">담당 업무</div>
+<ul class="project-task-list">
+<li>타 기관의 영문 보도자료 연계 기능 개발</li>
+<li>보도자료 관리 기능 및 <strong>데이터 연계 배치 개발·운영</strong></li>
+<li>기존 시스템 기능 고도화와 운영 이슈 대응</li>
+<li>운영 WAS의 실제 소스를 확보해 <strong>별도 개발 서버 환경 구축</strong></li>
+<li>SVN·운영 소스 간 불일치를 정리하고 개발 환경에서 사전 확인 후 운영 배포하도록 흐름 개선</li>
+</ul>
+<div class="project-problem">
+<span>PROBLEM → ACTION → IMPACT</span>
+<p><b>개발 서버 부재·소스 불일치</b> → 운영 WAS 소스 기반 개발 환경 구성·동기화 → <b>운영 배포 위험 감소</b></p>
+</div>
+<div class="project-stack"><div><span>DEVELOPMENT</span><p>Java · eGovFramework · JSP · JavaScript · jQuery · CUBRID</p></div><div><span>OPERATIONS</span><p>Linux · Apache · SVN · OTP · Wisenut · eBook</p></div></div>
+</article>
+<article class="project-card project-card-expanded project-card-wide reveal">
+<div class="project-card-text">
+<div class="card-head"><span>PROJECT 04</span><span class="project-role-label">초기 설계 · 공통 개발 · 외부 API</span></div>
+<h3>세종학당<br>온라인 학습 플랫폼</h3>
+<p class="org">세종학당 · 2019.07.09 — 2020.01.08</p>
+<p class="details">신규 온라인 학습 플랫폼의 <strong>초기 개발 기반을 직접 구성</strong>하고 실시간 화상회의 서비스 연동까지 수행했습니다.</p>
+</div>
+<div class="project-card-work">
+<div class="project-roles-title">담당 업무</div>
+<ul class="project-task-list">
+<li>신규 프로젝트 초기 설계 및 웹 애플리케이션 기본 구조 구성</li>
+<li>개발에 필요한 공통 기능 구현과 프로젝트 초기 개발 기반 마련</li>
+<li><strong>Cisco Webex API</strong>를 활용한 실시간 화상회의 기능 연동</li>
+<li>온라인 교육 플랫폼 주요 기능 개발 및 구축</li>
+</ul>
+<div class="project-stack"><div><span>EXPERIENCE</span><p>프로젝트 구조 설계 · 공통 개발 · Webex API 연동 · 온라인 교육 플랫폼</p></div></div>
+</div>
+</article>
 </div>
 
 <div class="development-case-heading reveal"><span>DEVELOPMENT OWNERSHIP</span><h3>직접 설계하고 구현한 주요 기능</h3><p>사업 참여 이력 외에도, 실제로 맡았던 개발 범위를 구체적으로 기록했습니다.</p></div>
@@ -166,14 +258,16 @@ body{background:var(--bg)}
 <div class="case-meta"><span class="case-index">05</span><span>2019.04 — 2019.07</span></div>
 <h3>서류 중심 업무를<br>내부 관리 시스템으로</h3>
 <p class="case-client">대중소기업·농어업협력재단 · 적합업종 정보화시스템</p>
-<p>기존 서류로 처리하던 적합업종 관련 업무를 전산화하는 신규 프로젝트에서 업무 분석, <strong>데이터베이스 설계 및 시스템 개발을 단독 담당</strong>했습니다. 공공 정보화사업의 감리 대응 과정도 경험했습니다.</p>
-<div class="case-keywords"><span>단독 개발</span><span>DB 설계</span><span>업무 전산화</span><span>감리 대응</span></div>
+<p>약 5천만 원 규모의 신규 정보화 사업에서 서류 중심 적합업종 업무를 내부 관리 시스템으로 전환했습니다. <strong>업무 분석부터 DB 설계, 시스템 개발까지 단독 수행</strong>하고 공공 정보화사업 감리에도 대응했습니다.</p>
+<ul class="development-case-tasks"><li>기존 서류 업무 분석 및 전산화 방향 반영</li><li>데이터베이스 구조 설계와 내부 관리 시스템 개발</li><li>개발 단계의 감리 대응 및 관련 보완 업무</li></ul>
+<div class="case-keywords"><span>단독 개발</span><span>DB 설계</span><span>업무 전산화</span><span>감리 대응</span><span>약 5천만 원 사업</span></div>
 </article>
 <article class="development-case reveal">
 <div class="case-meta"><span class="case-index">06</span><span>2018.12 — 2019.01</span></div>
 <h3>제휴기관마다<br>전용 교육 채널 제공</h3>
 <p class="case-client">소상공인 교육정보시스템 · 제휴강의 기능 개발</p>
-<p>외부 제휴기관이 기존 교육 플랫폼 안에서 자체 교육 채널을 운영할 수 있도록 <strong>기관별 고유 URL 경로와 전용 채널 제공 기능</strong>을 개발했습니다.</p>
+<p>기존 소상공인 교육 플랫폼에서 제휴기관마다 독립적인 교육 채널을 만들 수 있도록 <strong>제휴강의 채널 기능을 직접 개발</strong>했습니다.</p>
+<ul class="development-case-tasks"><li>기관별 자체 교육 채널 구성·제공 기능 구현</li><li>기관별 고유 URL 경로를 활용한 전용 채널 페이지 개발</li><li>기존 교육 플랫폼과 제휴기관 채널 기능 연계</li></ul>
 <div class="case-keywords"><span>제휴강의</span><span>기관별 채널</span><span>URL 경로</span><span>Java · eGovFramework</span></div>
 <div class="case-link-row"><a href="https://edu.sbiz.or.kr/edu/channel/channelQuestList.do?menuCode=WWW001052002" target="_blank" rel="noopener noreferrer">채널 목록 ↗</a><a href="https://edu.sbiz.or.kr/edu/channel/sijang/main.do" target="_blank" rel="noopener noreferrer">운영 예시 ↗</a></div>
 </article>
